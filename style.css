@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.leftcolumn {
+    flex: 1;
+    background: url("leftcolumnbg.jpg");
+    background-size: cover;
+}
+
+.rightcolumn {
+    flex: 2;
+    background-color: rgb(20, 20, 20);
+}
+
+.logobar {
+    height: 120px;
+    background: no-repeat center url("logo.png") rgb(0, 0, 0, .7);
+    background-size: 60px;
+    top: 20%;
+    position: relative;
+}
