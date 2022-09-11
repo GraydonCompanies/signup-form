@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 .container {
@@ -12,7 +27,7 @@
 
 .leftcolumn {
     flex: 1;
-    background: url("leftcolumnbg.jpg");
+    background: url('leftcolumnbg.jpg');
     background-size: cover;
 }
 
@@ -22,9 +37,43 @@
 }
 
 .logobar {
-    height: 120px;
-    background: no-repeat center url("logo.png") rgb(0, 0, 0, .7);
-    background-size: 60px;
-    top: 20%;
+    height: 33.3%;
+    background: no-repeat center url('logo.png') rgb(0, 0, 0, .7);
+    background-size: 10vh;
+    top: 33.3%;
     position: relative;
+}
+
+.header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 33.3%;
+    padding: 60px;
+}
+
+.signupform {
+    flex: 1;
+    background-color: rgb(30, 30, 30);
+    height: 33.3%;
+    padding: 60px;
+}
+
+.footer {
+    flex: 1;
+    height: 33.3%;
+}
+
+label {
+    font-size: .7em;
+    text-transform: uppercase;
+    display: block;
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(60, 60, 60);
+    border-radius: 5px;
 }
