@@ -23,27 +23,31 @@
                 </p>
             </div>
             <div class="signupform">
-                <form action="http://httpbin.org/post" method="post">
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname">
-
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname">
-
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone">
-
-                    <label for="passwork">Pasword</label>
-                    <input type="text" name="password" id="password">
-
-                    <label for="confirmpassword">Confirm Password</label>
-                    <input type="text" name="confirmpassword" id="confirmpassword">
+                <form action="http://httpbin.org/post" method="post" id="signupform">
+                    <div class="formfield">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        <label for="password">Pasword</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="formfield">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password" name="confirmpassword" id="confirmpassword">
+                    </div>
                 </form>
             </div>
-            <div class="footer"></div>
+            <div class="footer">
+                <button type="submit" form="signupform">Submit</button>
+                <p>
+                    Already have an account? <a href="#">Log in.</a>
+                </p>
+            </div>
         </div>
     </div>
 </body>

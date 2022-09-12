@@ -20,6 +20,41 @@ p {
     font-size: 1em;
 }
 
+
+label {
+    font-size: .7em;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 5px;
+}
+
+input {
+    margin-bottom: 20px;
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(60, 60, 60);
+    height: 35px;
+    width: 200px;
+    border: 1px solid rgb(60, 60, 60);
+}
+
+input:hover {
+    border: 1px solid coral;
+    background-color: rgb(107, 54, 35);
+}
+
+button {
+    padding: 15px 45px 15px 45px;
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid grey;
+    font-size: 1em;
+}
+
+button:hover {
+    border: 1px solid coral;
+    background-color: rgb(107, 54, 35);
+    color: rgb(255, 164, 131);
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -55,6 +90,8 @@ p {
 
 .signupform {
     flex: 1;
+    display: flex;
+    align-items: center;
     background-color: rgb(30, 30, 30);
     height: 33.3%;
     padding: 60px;
@@ -63,17 +100,11 @@ p {
 .footer {
     flex: 1;
     height: 33.3%;
+    padding: 60px;
 }
 
-label {
-    font-size: .7em;
-    text-transform: uppercase;
-    display: block;
-}
 
-input {
-    margin-bottom: 10px;
-    background-color: rgb(20, 20, 20);
-    border-color: rgb(60, 60, 60);
-    border-radius: 5px;
+.formfield {
+    float: left;
+    margin-right: 30px;
 }
